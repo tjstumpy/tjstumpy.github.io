@@ -1,0 +1,16 @@
+body{
+    background-color: #172740;
+}
+
+.center{
+    text-align: center;
+}
+
+.name{
+    color: white;
+}
+
+.fullname{
+    color: white;
+    font-size: large;
+}
