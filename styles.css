@@ -1,16 +1,31 @@
 body{
-    background-color: #172740;
+    background-color: #2F4454;
+    color: white;
+}
+
+img{
+    width: 10%;
+    height: auto;
+    padding-top: 3em;
+}
+
+a:link, a:visited{
+    
 }
 
 .center{
     text-align: center;
 }
 
-.name{
-    color: white;
+.fullname{
+    font-size: large;
 }
 
-.fullname{
-    color: white;
-    font-size: large;
+.studentnav{
+    text-align: center;
+
+}
+
+.reasons{
+    display: inline;
 }
