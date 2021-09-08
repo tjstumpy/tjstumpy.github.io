@@ -50,3 +50,23 @@ img{
 }a:hover, a:active{
     background-color: #2E151B;
 }
+
+.reasons{
+    padding: 10px;
+    font-size: 3vw;
+    text-align: center;
+}.reasons p{
+    margin-bottom: -10px;
+}
+
+.abouttitle{
+    font-size: 50px;
+    padding-left: 25px;
+    background-color: #DA7B93;
+}.aboutinfo{
+    margin-top: -20px;
+    padding: 0px 150px;
+    padding-right: 50%;
+    font-size: 20px;
+    overflow-wrap: normal;
+}
