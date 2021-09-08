@@ -4,22 +4,10 @@ body{
 }
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-}
-
-a:link, a:visited{
-    background-color: #DA7B93;
-    color: white;
-    text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 15px;
-}
-
-a:hover, a:active{
-    background-color: #2E151B;
-
+    padding-bottom: 10px;
 }
 
 .center{
@@ -27,18 +15,38 @@ a:hover, a:active{
 }
 
 .name{
-    padding: 0em;
+    font-size: 125px;
+    padding: 10px;
     margin-top: 0px;
-    margin-bottom: -12px;
-}
-.fullname{
-    font-size: large;
-}
-
-.studentnav{
+    margin-bottom: -50px;
+}.fullname{
+    font-size: 20px;
+    padding-left: 25px;
     text-align: center;
 }
 
-.reasons{
-    display: inline;
+.navbar{
+    background-color: #DA7B93;
+    font-size: 2vw;
+    max-height: 100px;
+    padding-bottom: 10px;
+}.navitems{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+    display: table;
+    height: max-content;
+}.navlist{
+    padding-top: 0px;
+
+    list-style: none;
+}.navlist li{
+    display:inline;
+}a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px 20px 10px;
+    border-radius: 15px;
+}a:hover, a:active{
+    background-color: #2E151B;
 }
