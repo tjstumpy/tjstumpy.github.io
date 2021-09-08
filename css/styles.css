@@ -4,26 +4,39 @@ body{
 }
 
 img{
-    width: 10%;
-    height: auto;
-    padding-top: 3em;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 a:link, a:visited{
-    
+    background-color: #DA7B93;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+a:hover, a:active{
+    background-color: #2E151B;
+
 }
 
 .center{
     text-align: center;
 }
 
+.name{
+    padding: 0em;
+    margin-top: 0px;
+    margin-bottom: -12px;
+}
 .fullname{
     font-size: large;
 }
 
 .studentnav{
     text-align: center;
-
 }
 
 .reasons{
