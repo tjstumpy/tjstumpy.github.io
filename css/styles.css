@@ -27,18 +27,18 @@ img{
 
 .navbar{
     background-color: #DA7B93;
-    font-size: 2vw;
+    font-size: 35px; /*use vw for responsive text size*/
     max-height: 100px;
     padding-bottom: 10px;
 }.navitems{
     text-align: center;
     margin: 0 auto;
-    padding-top: 25px;
+    max-height: 10px;
     display: table;
     height: max-content;
+
 }.navlist{
     padding-top: 0px;
-
     list-style: none;
 }.navlist li{
     display:inline;
