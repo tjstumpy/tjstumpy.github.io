@@ -1,5 +1,5 @@
 body{
-    background-color: #2F4454;
+    background-color: #2a2b2c;
     color: white;
     margin: 0;
 }
@@ -11,8 +11,10 @@ img{
     padding-bottom: 10px;
 }
 
-.center{
+.pictureInfo{
     text-align: center;
+    min-height: 70vh;
+    margin-top: 15vh;
 }
 
 .name{
@@ -27,19 +29,19 @@ img{
 }
 
 .navbar{
-    background-color: #DA7B93;
-    font-size: 35px; /*use vw for responsive text size*/
-    max-height: 100px;
-    padding-bottom: 10px;
+    background-color: #212121;
+    font-size: 20px; /*use vw for responsive text size*/
+    min-height: 10vh;
 }.navitems{
-    text-align: center;
-    margin: 0 auto;
-    max-height: 10px;
+    text-align: left;
+    margin: 0;
+    min-height: 10vh;
     display: table;
-    height: max-content;
-
 }.navlist{
-    padding-top: 0px;
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+    max-height: 10vh;
+    min-width: 95vw;
     list-style: none;
 }.navlist li{
     display:inline;
@@ -47,9 +49,13 @@ img{
     color: white;
     text-decoration: none;
     padding: 20px 10px 20px 10px;
-    border-radius: 15px;
 }a:hover, a:active{
-    background-color: #2E151B;
+    color:#2F4454;
+}
+
+.studentNav{
+    float: right;
+    margin-top: -20px;
 }
 
 .reasons{
@@ -63,11 +69,46 @@ img{
 .abouttitle{
     font-size: 50px;
     padding-left: 25px;
-    background-color: #DA7B93;
+    background-color: #2F4454;
 }.aboutinfo{
     margin-top: -20px;
     padding: 0px 150px;
     padding-right: 50%;
     font-size: 20px;
     overflow-wrap: normal;
+}
+
+#contact-form{
+    min-width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+input[type=text]{
+    background-color: #2a2b2c;
+    min-width: 50vw;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #343536;
+    color: white;
+
+}#user_message{
+    background-color: #2a2b2c;
+    border: 2px solid #343536;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    min-width: 49vw;
+    height: 20vh;
+    resize: none;
+}input[type=submit]{
+    border: 2px solid #343536;
+    background-color: #2a2b2c;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 46%;
+}input[type=submit]:hover{
+    background-color: #343536;
 }

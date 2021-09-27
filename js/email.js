@@ -35,7 +35,8 @@ function isValidInput(){
         console.log("number format is wrong!");
         return false;
     }else if(user_message == ""){
-        console.log("Message is empty!");
+        console.log("Message is empty! Message: " + user_message);
+        return false;
     }
 
     return true;
