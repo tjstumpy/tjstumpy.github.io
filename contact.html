@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Me</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">    
+            emailjs.init("user_nfvjbK1mQsOjEYkxYBSBa");
+        </script>
+
+        <script src="js/email.js"></script>
+    </head>
+    <body style="font-family: 'Nunito', sans-serif;">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <label for="user_fname">First Name*</label><br>
+            <input type="text" name="user_fname" id="user_fname" placeholder="First name..."><br>
+            <label for="user_fname">Last Name*</label><br>
+            <input type="text" name="user_lname" id="user_lname" placeholder="Last name..."><br>
+            <label for="user_fname">Email*</label><br>
+            <input type="text" name="user_email" id="user_email" placeholder="Email..."><br>
+            <label for="user_fname">Number*</label><br> 
+            <input type="text" name="user_phone" id="user_phone" placeholder="Phone Number..."><br>
+            <label for="user_fname">Message*</label><br>
+            <input type="text" name="user_message" id="user_message" placeholder="Message..."><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>
