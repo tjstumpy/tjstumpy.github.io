@@ -5,12 +5,14 @@ window.onload = function(){
         var serviceID = "service_h6kdfkm";
         var templateID = "template_sdv48mc";
         
+        //reset input border colors so validation visualization is updated correctly
         document.getElementById("user_fname").style = "border: 2px solid #343536;";
         document.getElementById("user_lname").style = "border: 2px solid #343536";
         document.getElementById("user_email").style = "border: 2px solid #343536";
         document.getElementById("user_phone").style = "border: 2px solid #343536";
         document.getElementById("user_message").style = "border: 2px solid #343536";
 
+        //if all input is valid, sends email and tells user email was sent
         if(isValidInput()){
         emailjs.sendForm(serviceID, templateID, this)
         .then(function() {
@@ -20,10 +22,8 @@ window.onload = function(){
         });
         }
     });
-
 }
 
-//TODO: validate email input
 function isValidInput(){
     var user_fname = document.getElementById("user_fname").value;
     var user_lname = document.getElementById("user_lname").value;
@@ -32,6 +32,7 @@ function isValidInput(){
     var user_message = document.getElementById("user_message").value;
     var isValid = true;
 
+    //test each input if they are null or incorrect format, if so, visualize by setting border to different color
     if(user_fname == ""){ 
         document.getElementById("user_fname").style = "border: 2px solid #C23B22";
         isValid = false;
@@ -49,5 +50,4 @@ function isValidInput(){
         isValid = false;
     }
     return isValid;
-
 }
