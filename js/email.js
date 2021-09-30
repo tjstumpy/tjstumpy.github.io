@@ -5,16 +5,20 @@ window.onload = function(){
         var serviceID = "service_h6kdfkm";
         var templateID = "template_sdv48mc";
         
+        document.getElementById("user_fname").style = "border: 2px solid #343536;";
+        document.getElementById("user_lname").style = "border: 2px solid #343536";
+        document.getElementById("user_email").style = "border: 2px solid #343536";
+        document.getElementById("user_phone").style = "border: 2px solid #343536";
+        document.getElementById("user_message").style = "border: 2px solid #343536";
+
         if(isValidInput()){
         emailjs.sendForm(serviceID, templateID, this)
         .then(function() {
-            console.log('SUCCESS!');
+            document.getElementById("submit").value = "Sent!";
         }, function(error) {
             console.log('FAILED...', error);
         });
-        console.log("input is valid!");
         }
-
     });
 
 }
@@ -23,20 +27,27 @@ window.onload = function(){
 function isValidInput(){
     var user_fname = document.getElementById("user_fname").value;
     var user_lname = document.getElementById("user_lname").value;
+    var user_email = document.getElementById("user_email").value;
     var user_phone = document.getElementById("user_phone").value;
     var user_message = document.getElementById("user_message").value;
+    var isValid = true;
 
-    if(user_fname == "" || user_lname == ""){ //validate names
-        alert("First/Last name is required!");
-        return false;
-    }else if(!user_phone.match(/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/)){ //validate phone number. found regex from https://www.w3resource.com/javascript/form/phone-no-validation.php
-        alert("Number format is wrong!\n\nAcceptable Formats:\n000 000 0000\n000-000-0000\n000.000.0000");
-        return false;
-    }else if(user_message == ""){
-        alert("Please enter a message.");
-        return false;
+    if(user_fname == ""){ 
+        document.getElementById("user_fname").style = "border: 2px solid #C23B22";
+        isValid = false;
+    }if(user_lname == ""){ 
+        document.getElementById("user_lname").style = "border: 2px solid #C23B22";
+        isValid = false;
+    }if(!user_email.match(/^([a-zA-Z0-9]+)@([[a-zA-Z]+)\.([a-zA-Z]{2,5})$/)){
+        document.getElementById("user_email").style = "border: 2px solid #C23B22";
+        isValid = false;
+    }if(!user_phone.match(/^([0-9]{3})-([0-9]{3})-([0-9]{4})$/)){
+        document.getElementById("user_phone").style = "border: 2px solid #C23B22";
+        isValid = false;
+    }if(user_message == ""){
+        document.getElementById("user_message").style = "border: 2px solid #C23B22";
+        isValid = false;
     }
-
-    return true;
+    return isValid;
 
 }
