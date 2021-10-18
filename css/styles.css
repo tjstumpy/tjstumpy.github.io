@@ -4,20 +4,15 @@ body{
     margin: 0;
 }
 
-img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    padding-bottom: 10px;
-}
-
-.pictureInfo{
+/*  */
+/* INDEX.HTML */
+/*  */
+/*picture of me and my name displayed on landing page*/
+.picture-name{
     text-align: center;
     min-height: 70vh;
     margin-top: 15vh;
-}
-
-.name{
+}.nickname{
     font-size: 125px;
     padding: 10px;
     margin-top: 0px;
@@ -26,38 +21,16 @@ img{
     font-size: 20px;
     padding-left: 25px;
     text-align: center;
+}#profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding-bottom: 10px;
 }
 
-.navbar{
-    background-color: #212121;
-    font-size: 20px; /*use vw for responsive text size*/
-    min-height: 10vh;
-}.navitems{
-    text-align: left;
-    margin: 0;
-    min-height: 10vh;
-    display: table;
-}.navlist{
-    margin-top: 3.5vh;
-    margin-bottom: 3.5vh;
-    max-height: 10vh;
-    min-width: 95vw;
-    list-style: none;
-}.navlist li{
-    display:inline;
-}a:link, a:visited{
-    color: white;
-    text-decoration: none;
-    padding: 20px 10px 20px 10px;
-}a:hover, a:active{
-    color:#2F4454;
-}
-
-.studentNav{
-    float: right;
-    margin-top: -20px;
-}
-
+/*  */
+/* ABOUTME.HTML */
+/*  */
 .reasons{
     padding: 10px;
     font-size: 50px;
@@ -65,7 +38,6 @@ img{
 }.reasons p{
     margin-bottom: -10px;
 }
-
 .abouttitle{
     font-size: 50px;
     padding-left: 25px;
@@ -78,12 +50,14 @@ img{
     overflow-wrap: normal;
 }
 
+/*  */
+/* CONTACT.HTML */
+/*  */
 #contact-form{
     min-width: 50vw;
     margin-left: 25vw;
     margin-right: 25vw;
 }
-
 input[type=text]{
     background-color: #2a2b2c;
     min-width: 50vw;
@@ -100,7 +74,7 @@ input[type=text]{
     padding-top: 10px;
     padding-left: 10px;
     min-width: 49vw;
-    height: 20vh;
+    height: 15vh;
     resize: none;
 }input[type=submit]{
     border: 2px solid #343536;
@@ -111,4 +85,83 @@ input[type=text]{
     margin-left: 46%;
 }input[type=submit]:hover{
     background-color: #343536;
+}
+
+/*  */
+/* NAVBAR CSS*/
+/*  */
+.navbar{
+    background-color: #212121;
+    font-size: 20px; /*use vw for responsive text size*/
+}.navlist{ /*ul of items in navbar*/
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 10vh;
+    min-width: 95vw;
+    padding-left: 1vw;
+    list-style: none;
+    position: relative;
+}a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+.nav-link{
+    padding: 10px;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}.nav-link:hover::after{
+    width: 100%;
+}
+/*home icon on top left*/
+#home{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}#home-link{
+    padding: 10px;
+}
+/* Dropdown functionality and styling */
+.dropbtn {
+    background-color: #212121;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+color: white;
+font-size: 16px;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #343536;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }

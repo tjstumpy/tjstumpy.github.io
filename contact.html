@@ -6,7 +6,7 @@
     <title>Contact Me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>    
@@ -15,22 +15,32 @@
     <script src="js/email.js"></script>
 </head>
 
-<body style="font-family: 'Nunito', sans-serif;">
+<body style="font-family: 'Poppins', sans-serif;">
     <!--Top navbar on every page-->
     <div class="navbar">
-        <div class="navitems">
-          <ul class="navlist">
-            <li><a href="https://mattm401.github.io/">Course Website</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://sunxinyi0501.github.io" class="studentNav">Next Student</a></li>
-            <li><a href="https://rstahl2000.github.io" class="studentNav">Previous Student</a></li>
-          </ul>
+
+      <nav class="navlist">
+        <a href="index.html" id="home-link" class="nav-link"><img src="images/home.png" id="home" href="index.html"></a>
+        
+        <div class="dropdown">
+          <button class="dropbtn" class="nav-link"><a class="nav-link">School Links</a></button>
+          <div class="dropdown-content">
+            <a href="https://mattm401.github.io/" class="nav-link">Course Website</a>
+            <a href="https://sunxinyi0501.github.io" class="nav-link">Next Student</a>
+            <a href="https://rstahl2000.github.io" class="nav-link">Previous Student</a>
+            <a href="aboutme.html" class="nav-link">About Me</a>
+          </div>
         </div>
-      </div>
+
+        <a href="" class="nav-link">Projects</a>
+        <a href="" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact Me</a>
+      </nav>
+
+  </div>
 
     <!--everything related to the form-->
-    <h1 style="text-align: center;">Contact Me</h1>
+    <h1 style="text-align: center; margin-bottom: 0;">Contact Me</h1>
     <form id="contact-form">
         <label for="user_fname">First Name*</label><br>
         <input type="text" name="user_fname" id="user_fname" placeholder="First name..."><br><br>

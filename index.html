@@ -6,31 +6,41 @@
   <title>Personal Website</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="font-family: 'Nunito', sans-serif;">
+<body style="font-family: 'Poppins', sans-serif;">
   <!--Top navbar on every page-->
   <div class="navbar">
-    <div class="navitems">
-      <ul class="navlist">
-        <li><a href="https://mattm401.github.io/">Course Website</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
-        <li><a href="https://sunxinyi0501.github.io" class="studentNav">Next Student</a></li>
-        <li><a href="https://rstahl2000.github.io" class="studentNav">Previous Student</a></li>
-      </ul>
-    </div>
+
+      <nav class="navlist">
+        <a href="index.html" id="home-link" class="nav-link"><img src="images/home.png" id="home" href="index.html"></a>
+        
+        <div class="dropdown">
+          <button class="dropbtn" class="nav-link"><a class="nav-link">School Links</a></button>
+          <div class="dropdown-content">
+            <a href="https://mattm401.github.io/" class="nav-link">Course Website</a>
+            <a href="https://sunxinyi0501.github.io" class="nav-link">Next Student</a>
+            <a href="https://rstahl2000.github.io" class="nav-link">Previous Student</a>
+            <a href="aboutme.html" class="nav-link">About Me</a>
+          </div>
+        </div>
+
+        <a href="" class="nav-link">Projects</a>
+        <a href="" class="nav-link">Resume</a>
+        <a href="contact.html" class="nav-link">Contact Me</a>
+      </nav>
+
   </div>
 
   <!--displays my picture and name-->
-  <div class="pictureInfo">
+  <div class="picture-name">
     <div style="display:inline-block;vertical-align: middle;">
-      <img src="images/pfp.png" alt="picture of me">
+      <img src="images/pfp.png" id="profile" alt="picture of me">
     </div>
     <div style="display:inline-block;vertical-align: middle;">
-      <h1 class="name">Tim</h1>
+      <h1 class="nickname">Tim</h1>
       <h2 class="fullname">Timothy Stumper</h2>
       <!--Timothy Stumper, CISC474-010, Personal Web Page 1, tjstumpy@udel.edu-->
     </div>
