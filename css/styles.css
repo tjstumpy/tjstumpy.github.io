@@ -10,10 +10,12 @@ body{
 /*picture of me and my name displayed on landing page*/
 .background-gradient{
     background-image: linear-gradient(to bottom, rgba(33, 34, 35, 0.5), rgba(33, 34, 35, 1)), url('../images/code-background2.png');
-    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: none;
     margin: 0;
     position: absolute;
-    width: 100vw;
+    min-width: 100vw;
     height: 50vh;
 }
 .picture-name{
@@ -23,16 +25,20 @@ body{
     background-color: #212223;
     margin-top: 5vh;
     width: fit-content;
-    margin-left: 33vw;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
+    padding: 1.2%;
 }.nickname{
-    font-size: 125px;
+    font-size: 100px;
+    font-weight: 600;
     padding: 10px;
     margin-top: 0px;
     margin-bottom: -50px;
 }.fullname{
+    margin: 0;
     font-size: 20px;
-    padding-left: 25px;
+    padding: 10px;
     text-align: center;
 }#profile{
     width: 250px;
