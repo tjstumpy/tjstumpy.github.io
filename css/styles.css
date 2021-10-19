@@ -16,19 +16,27 @@ body{
     margin: 0;
     position: absolute;
     min-width: 100vw;
-    height: 50vh;
+    height: 60vh;
 }
-.picture-name{
+.info-block{
     animation: fadeInAnimation 2s;
     animation-fill-mode: both;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: #212223;
     margin-top: 5vh;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 20px;
     padding: 1.2%;
+    background-color: #181818;
+
+}.picture-name{
+    margin-left: auto;
+    margin-right: auto;
+}.about-1{
+    margin-left: 5vw;
+}.about-2{
+    margin-left: 50vw;
+    margin-right: 5vw;
 }.nickname{
     font-size: 100px;
     font-weight: 600;
@@ -46,8 +54,11 @@ body{
     border-radius: 50%;
     padding: 10px;
 }
-.info{
-    position:relative;
+.about-me{
+    animation: fadeInAnimation 4s;
+    color: white;
+    margin-top: 65vh;
+    text-align: center;
 }
 /*  */
 /* ABOUTME.HTML */
