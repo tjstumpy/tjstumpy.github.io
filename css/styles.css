@@ -84,7 +84,13 @@ html {
 /*  */
 /* CONTACT.HTML */
 /*  */
-#contact-form{
+.contact-container{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}#contact-header{
+    text-align: center;
+    margin: 0;
+}#contact-form{
     min-width: 50vw;
     margin-left: 25vw;
     margin-right: 25vw;
@@ -128,8 +134,8 @@ input[type=text]{
     align-items: center;
 }
 #resume-view{
-    height: 700px;
-    width: 500px;
+    height: 75vh;
+    aspect-ratio: 1 / 1.4142;
     margin-left: 35vw;
     margin-right: 35vw;
 }

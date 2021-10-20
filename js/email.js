@@ -16,7 +16,7 @@ window.onload = function(){
         if(isValidInput()){
         emailjs.sendForm(serviceID, templateID, this)
         .then(function() {
-            document.getElementById("submit").value = "Sent!";
+            document.getElementById("submit").value = "Sent! Thank you!";
         }, function(error) {
             console.log('FAILED...', error);
         });
