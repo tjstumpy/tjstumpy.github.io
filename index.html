@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/all.css">
+
 </head>
 
 <body style="font-family: 'Poppins', sans-serif;">
@@ -15,7 +17,7 @@
   <div class="navbar">
 
       <nav class="navlist">
-        <a href="index.html" id="home-link" class="nav-link"><img src="images/home.png" id="home" href="index.html"></a>
+        <a href="/" id="home-link" class="nav-link"><img src="images/home.png" id="home"></a>
         
         <div class="dropdown">
           <button class="dropbtn" class="nav-link"><a class="nav-link">School Links</a></button>
@@ -30,6 +32,12 @@
         <a href="" class="nav-link">Projects</a>
         <a href="resume.html" class="nav-link">Resume</a>
         <a href="contact.html" class="nav-link">Contact Me</a>
+
+          <div class="social-icons social-nav">
+            <a href="https://www.instagram.com/tjstumpy/"><i class="fab fa-instagram nav-link"></i></a>
+            <a href="https://github.com/Tjstumpy/"><i class="fab fa-github nav-link"></i></a>
+            <a href="https://www.linkedin.com/in/timstumper/"><i class="fab  fa-linkedin nav-link"></i></a>
+          </div>
       </nav>
 
   </div>
@@ -53,18 +61,66 @@
     <h2>About Me</h2>
     <!--who am i, what job am i looking for, what do i do when im not coding-->
       <div class="info-block about-1"> 
-        <h3></h3>
-        <p>Hello! My name is Tim and I enjoy web development and software engineering. My interest in web development </p>
+        <h3>Who I Am</h3>
+        <p>Hello! My name is Tim and I enjoy web development. My interest in web development
+          has increased significantly this past year since I learned about API's and how to make
+          clean, user-friendly UI's. Since then, I have spent a lot of time learning how to make 
+          high quality websites (like this one!).</p>
       </div>
 
       <div class="info-block about-2"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <h3>Technical Skills</h3>
+        <p>Here are some of the technologies that I have worked with:</p>
+        <div style="display: flex;">
+          <ul class="skills">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Java/C++</li>
+            <li>C</li>
+          </ul>
+          <ul class="skills">
+            <li>Git</li>
+            <li>Data structures</li>
+            <li>Algorithms</li>
+          </ul>
+        </div>
+        <p>I am hoping to land a front-end web development or software engineering internship.</p>
       </div>
 
-      <div class="info-block about-1"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+      <div class="info-block about-3"> 
+        <div style="display: block;">
+          <h3>My Personal Interests</h3>
+          <p>When I am not coding, I like to spend my time doing any of the following:</p>
+          <ul style="text-align: left;">
+            <li>Skateboarding</li>
+            <li>Learning Japanese</li>
+            <li>Watching anime</li>
+            <li>Reading manga</li>
+          </ul>
+        </div>
+        <img src="images/interests.png" id="profile">
       </div>
   </div>
-</body>
 
+  <div class="footer">
+    <div class="social-icons" style="width: 100%;">
+      <a href="https://www.instagram.com/tjstumpy/"><i class="fab fa-2x fa-instagram nav-link"></i></a>
+      <a href="https://github.com/Tjstumpy/"><i class="fab fa-2x fa-github nav-link"></i></a>
+      <a href="https://www.linkedin.com/in/timstumper/"><i class="fab fa-2x fa-linkedin nav-link"></i></a>
+    </div>
+    <div class="footer-mail">
+      <h4 id="footer-email">tjstumpy@udel.edu</h4>
+    </div>
+    <div class="footer-top">
+      <a class="nav-link "href="#top">Back to top</a>
+    </div>
+
+    
+  </div>
+</body>
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+</script>
 </html>

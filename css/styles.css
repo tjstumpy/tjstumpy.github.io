@@ -1,4 +1,6 @@
-body{
+html {
+	scroll-behavior: smooth;
+}body{
     background-color: #212223;
     color: white;
     margin: 0;
@@ -9,7 +11,7 @@ body{
 /*  */
 /*picture of me and my name displayed on landing page*/
 .background-gradient{
-    background-image: linear-gradient(to bottom, rgba(33, 34, 35, 0.5), rgba(33, 34, 35, 1)), url('../images/code-background2.png');
+    background-image: linear-gradient(to bottom, rgba(33, 34, 35, 0.5), rgba(33, 34, 35, 1)), url('../images/code-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: none;
@@ -32,8 +34,15 @@ body{
     margin-right: auto;
 }.about-1{
     margin-left: 5vw;
+    margin-right: 50vw;
 }.about-2{
-    margin-left: 45vw;
+    margin-left: 50vw;
+    margin-right: 5vw;
+}.about-3{
+    margin-left: 5vw;
+    margin-right: 50vw;
+    margin-bottom: 5vh;
+    display: flex;
 }.nickname{
     font-size: 100px;
     font-weight: 600;
@@ -50,6 +59,9 @@ body{
     height: 250px;
     border-radius: 50%;
     padding: 10px;
+}.skills{
+    text-align: left;
+    width: 100%;
 }
 .about-me{
     animation: fadeInAnimation 4s;
@@ -57,27 +69,6 @@ body{
     margin-top: 65vh;
     width: 100%;
     text-align: center;
-}
-/*  */
-/* ABOUTME.HTML */
-/*  */
-.reasons{
-    padding: 10px;
-    font-size: 50px;
-    text-align: center;
-}.reasons p{
-    margin-bottom: -10px;
-}
-.abouttitle{
-    font-size: 50px;
-    padding-left: 25px;
-    background-color: #2F4454;
-}.aboutinfo{
-    margin-top: -20px;
-    padding: 0px 150px;
-    padding-right: 50%;
-    font-size: 20px;
-    overflow-wrap: normal;
 }
 
 /*  */
@@ -135,6 +126,7 @@ input[type=text]{
 .navbar{
     background-color: #181818;
     font-size: 20px; /*use vw for responsive text size*/
+    align-items: center;
 }.navlist{ /*ul of items in navbar*/
     margin-top: 0;
     margin-bottom: 0;
@@ -210,6 +202,43 @@ display: block;
     display: block;
 }
 
+/*  */
+/* FOOTER CSS*/
+/*  */
+.footer{
+    background-color: #181818;
+    left: 0;
+    bottom: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+}.social-icons{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}.footer-mail{
+    width: 100%;
+    line-height: 15vh;
+    text-align: center;
+}#footer-email{
+    margin: 0;
+    font-size: larger;
+}
+i{
+    color:#9c9c9c;
+    padding: 10px;
+}i:hover{
+    cursor: pointer;
+    color: white;
+}.footer-top{
+    width: 100%;
+    text-align: center;
+    line-height: 15vh;
+}.social-nav{ /* THIS IS FOR NAVBAR BUT IT DOESNT WORK UNLESS UNDER .social-icons */
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
 /*  */
 /* KEYFRAMES */
 /*  */
