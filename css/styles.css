@@ -36,13 +36,13 @@ html {
     margin-right: auto;
 }.about-1{
     margin-left: 5vw;
-    margin-right: 50vw;
+    margin-right: 55vw;
 }.about-2{
-    margin-left: 50vw;
+    margin-left: 55vw;
     margin-right: 5vw;
 }.about-3{
     margin-left: 5vw;
-    margin-right: 50vw;
+    margin-right: 55vw;
     margin-bottom: 5vh;
     display: flex;
 }.nickname{
@@ -72,7 +72,15 @@ html {
     width: 100%;
     text-align: center;
 }
-
+/*  */
+/* PROJECTS.HTML */
+/*  */
+.projects-view{
+    min-width: fit-content;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
 /*  */
 /* CONTACT.HTML */
 /*  */
@@ -115,6 +123,9 @@ input[type=text]{
 /*  */
 .resume-div{
     min-width: fit-content;
+    height: 80vh;
+    display: flex;
+    align-items: center;
 }
 #resume-view{
     height: 700px;
