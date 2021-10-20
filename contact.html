@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>    
         emailjs.init("user_nfvjbK1mQsOjEYkxYBSBa");
+        document
     </script>
     <script src="js/email.js"></script>
 </head>
@@ -32,28 +34,49 @@
           </div>
         </div>
 
-        <a href="" class="nav-link">Projects</a>
+        <a href="portfolio.html" class="nav-link">Projects</a>
         <a href="resume.html" class="nav-link">Resume</a>
         <a href="contact.html" class="nav-link" style="color: white">Contact Me</a>
+
+        <div class="social-icons social-nav">
+          <a href="https://www.instagram.com/tjstumpy/"><i class="fab fa-instagram nav-link"></i></a>
+          <a href="https://github.com/Tjstumpy/"><i class="fab fa-github nav-link"></i></a>
+          <a href="https://www.linkedin.com/in/timstumper/"><i class="fab  fa-linkedin nav-link"></i></a>
+        </div>
       </nav>
 
   </div>
 
     <!--everything related to the form-->
-    <h1 style="text-align: center; margin-bottom: 0;">Contact Me</h1>
-    <form id="contact-form">
-        <label for="user_fname">First Name*</label><br>
-        <input type="text" name="user_fname" id="user_fname" placeholder="First name..."><br><br>
-        <label for="user_fname">Last Name*</label><br>
-        <input type="text" name="user_lname" id="user_lname" placeholder="Last name..."><br><br>
-        <label for="user_fname">Email*</label><br>
-        <input type="text" name="user_email" id="user_email" placeholder="Email..."><br><br>
-        <label for="user_fname">Number*</label><br> 
-        <input type="text" name="user_phone" id="user_phone" placeholder="000-000-0000"><br><br>
-        <label for="user_fname">Message*</label><br>
-        <textarea name="user_message" id="user_message" placeholder="Message..."></textarea><br><br>
-        <input type="submit" id="submit" value="Send">
-    </form>
+    <div style="height: auto;">
+      <h1 style="text-align: center; margin-bottom: 0;">Contact Me</h1>
+      <form id="contact-form">
+          <label for="user_fname">First Name*</label><br>
+          <input type="text" name="user_fname" id="user_fname" placeholder="First name..."><br><br>
+          <label for="user_fname">Last Name*</label><br>
+          <input type="text" name="user_lname" id="user_lname" placeholder="Last name..."><br><br>
+          <label for="user_fname">Email*</label><br>
+          <input type="text" name="user_email" id="user_email" placeholder="Email..."><br><br>
+          <label for="user_fname">Number*</label><br> 
+          <input type="text" name="user_phone" id="user_phone" placeholder="000-000-0000"><br><br>
+          <label for="user_fname">Message*</label><br>
+          <textarea name="user_message" id="user_message" placeholder="Message..."></textarea><br><br>
+          <input type="submit" id="submit" value="Send">
+      </form>
+    </div>
+    <div class="footer" style="position: absolute;">
+      <div class="social-icons" style="width: 100%;">
+        <a href="https://www.instagram.com/tjstumpy/"><i class="fab fa-2x fa-instagram nav-link"></i></a>
+        <a href="https://github.com/Tjstumpy/"><i class="fab fa-2x fa-github nav-link"></i></a>
+        <a href="https://www.linkedin.com/in/timstumper/"><i class="fab fa-2x fa-linkedin nav-link"></i></a>
+      </div>
+      <div class="footer-mail">
+        <h4 id="footer-email">tjstumpy@udel.edu</h4>
+      </div>
+      <div class="footer-top">
+        <a class="nav-link "href="/">Back to home</a>
+      </div>
+    </div>
 </body>
 
 </html>

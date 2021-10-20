@@ -1,9 +1,11 @@
 html {
 	scroll-behavior: smooth;
+    height: 100%;
 }body{
     background-color: #212223;
     color: white;
     margin: 0;
+    height: 100%;
 }
 
 /*  */
@@ -21,7 +23,7 @@ html {
     height: 60vh;
 }
 .info-block{
-    animation: fadeInAnimation 2s;
+    animation: fadeInAnimation 1.75s;
     animation-fill-mode: both;
     background-color: #181818;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -64,7 +66,7 @@ html {
     width: 100%;
 }
 .about-me{
-    animation: fadeInAnimation 4s;
+    animation: fadeInAnimation 2s;
     color: white;
     margin-top: 65vh;
     width: 100%;
