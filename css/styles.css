@@ -91,6 +91,7 @@ html {
 .contact-container{
     margin-top: 3vh;
     margin-bottom: 3vh;
+    min-height: 75vh;
 }#contact-header{
     text-align: center;
     margin: 0;
