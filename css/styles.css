@@ -142,6 +142,7 @@ input[type=text]{
     aspect-ratio: 1 / 1.4142;
     margin-left: 35vw;
     margin-right: 35vw;
+    --viewer-pdf-sidenav-width: 0px;
 }
 /*  */
 /* NAVBAR CSS*/
