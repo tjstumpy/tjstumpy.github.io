@@ -1,0 +1,6 @@
+.projects-view{
+    min-width: fit-content;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}

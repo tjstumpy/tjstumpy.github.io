@@ -1,150 +1,17 @@
 html {
 	scroll-behavior: smooth;
     height: 100%;
+    width: 100%;
+
 }body{
     background-color: #212223;
     color: white;
     margin: 0;
     height: 100%;
-}
-
-/*  */
-/* INDEX.HTML */
-/*  */
-/*picture of me and my name displayed on landing page*/
-.background-gradient{
-    background-image: linear-gradient(to bottom, rgba(33, 34, 35, 0.5), rgba(33, 34, 35, 1)), url('../images/code-background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: none;
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    height: 60vh;
-}
-.info-block{
-    animation: fadeInAnimation 1.75s;
-    animation-fill-mode: both;
-    background-color: #181818;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-top: 5vh;
-    width: fit-content;
-    border-radius: 20px;
-    padding: 1.2%;
-}.picture-name{
-    margin-left: auto;
-    margin-right: auto;
-}.about-1{
-    margin-left: 5vw;
-    margin-right: 55vw;
-}.about-2{
-    margin-left: 55vw;
-    margin-right: 5vw;
-}.about-3{
-    margin-left: 5vw;
-    margin-right: 55vw;
-    margin-bottom: 5vh;
-    display: flex;
-}.nickname{
-    font-size: 100px;
-    font-weight: 600;
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: -50px;
-}.fullname{
-    margin: 0;
-    font-size: 20px;
-    padding: 10px;
-    text-align: center;
-}#profile{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    padding: 10px;
-}.skills{
-    text-align: left;
     width: 100%;
 }
-.about-me{
-    animation: fadeInAnimation 2s;
-    color: white;
-    margin-top: 65vh;
-    width: 100%;
-    text-align: center;
-}.info-text{
-    color: #9c9c9c;
-}.highlighted-text{
-    color: white;
-}
-/*  */
-/* PROJECTS.HTML */
-/*  */
-.projects-view{
-    min-width: fit-content;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-}
-/*  */
-/* CONTACT.HTML */
-/*  */
-.contact-container{
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    min-height: 75vh;
-}#contact-header{
-    text-align: center;
-    margin: 0;
-}#contact-form{
-    min-width: 50vw;
-    margin-left: 25vw;
-    margin-right: 25vw;
-}
-input[type=text]{
-    background-color: #212223;
-    min-width: 50vw;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid #343536;
-    color: white;
 
-}#user_message{
-    background-color: #212223;
-    border: 2px solid #343536;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    padding-top: 10px;
-    padding-left: 10px;
-    min-width: 49vw;
-    height: 15vh;
-    resize: none;
-}input[type=submit]{
-    border: 2px solid #343536;
-    background-color: #212223;
-    color: white;
-    border-radius: 5px;
-    padding: 15px;
-    margin-left: 46%;
-}input[type=submit]:hover{
-    background-color: #343536;
-}
 
-/*  */
-/* RESUME.HTML */
-/*  */
-.resume-div{
-    min-width: fit-content;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-}
-#resume-view{
-    height: 75vh;
-    aspect-ratio: 1 / 1.4142;
-    margin-left: 35vw;
-    margin-right: 35vw;
-    --viewer-pdf-sidenav-width: 0px;
-}
 /*  */
 /* NAVBAR CSS*/
 /*  */
@@ -199,6 +66,7 @@ input[type=text]{
     padding: 16px;
     font-size: 20px;
     border: none;
+    align-items: center;
 }
 .dropdown {
     position: relative;
@@ -226,6 +94,7 @@ display: block;
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /*  */
 /* FOOTER CSS*/
@@ -264,9 +133,7 @@ i{
     padding-right: 10px;
     padding-top: 10px;
 }
-/*  */
-/* KEYFRAMES */
-/*  */
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -275,4 +142,42 @@ i{
     100% {
         opacity: 1;
      }
+}
+
+@media only screen and (max-width: 700px){
+    #footer-email{
+        font-size: small;
+    }
+    
+    .navlist{
+        min-height: 6vh;
+    }
+
+    .navlist{
+        display: flex;
+        align-items: center;
+        
+    }
+    .navbar, .nav-link{
+        font-size: 10px;
+    }
+    .nav-link{
+        padding: 2px;
+        margin-left: 5px;
+    }
+
+    .dropbtn{
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .social-icons{
+        padding: 0;
+        margin-left: auto;
+        margin-right: 2vw;
+    }
+
+    .footer-top{
+        display:none;
+    }
 }

@@ -8,7 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale-1">
 
 </head>
 
@@ -29,8 +31,8 @@
         </div>
 
         <a href="projects.html" class="nav-link">Projects</a>
-        <a href="resume.html" class="nav-link">Resume</a>
         <a href="contact.html" class="nav-link">Contact Me</a>
+        <a href="files/Resume.pdf" target="_blank" class="nav-link">Resume</a>
 
         <div class="social-icons social-nav">
           <a href="https://www.instagram.com/tjstumpy/"><i class="fab fa-instagram nav-link"></i></a>
@@ -45,14 +47,16 @@
   <div class="background-gradient">
     <div class="info-block picture-name">
       <div style="display:inline-block;vertical-align: middle;">
-        <img src="images/pfp.png" id="profile" alt="picture of me">
+        <img src="images/pfp.png" class="profile" alt="picture of me">
       </div>
+
       <div style="display:inline-block;vertical-align: middle;">
         <h1 class="nickname">Tim</h1>
         <h2 class="fullname">Timothy Stumper</h2>
         <!--Timothy Stumper, CISC474-010, Personal Web Page 1, tjstumpy@udel.edu-->
       </div>
-      <p style="color: #9c9c9c; margin:0; text-align: center;">Junior CS major at the University of Delaware</p>
+
+      <p class="bio">Junior CS major at the University of Delaware</p>
     </div>
   </div>
 
@@ -89,7 +93,9 @@
 
       <div class="info-block about-3"> 
         <div style="display: block;">
+          <div>
           <h3>My Personal Interests</h3>
+        </div>
           <p class="info-text">When I am <span class="highlighted-text">not coding</span>, I like to spend my time doing any of the following:</p>
           <ul style="text-align: left;">
             <li>Skateboarding</li>
@@ -98,7 +104,7 @@
             <li>Reading manga</li>
           </ul>
         </div>
-        <img src="images/interests.png" id="profile">
+        <!-- <img src="images/interests.png" class="profile interests"> -->
       </div>
   </div>
 
@@ -112,7 +118,7 @@
       <h4 id="footer-email">tjstumpy@udel.edu</h4>
     </div>
     <div class="footer-top">
-      <a class="nav-link "href="#top">Back to top</a>
+      <a class="nav-link"href="#top">Back to top</a>
     </div>
   </div>
   
