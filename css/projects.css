@@ -67,4 +67,8 @@ body{
         width: 92vw;
 
     }
+
+    .projects-view i{
+        margin-bottom: 10px;
+    }
 }
