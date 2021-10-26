@@ -18,10 +18,10 @@
   <div class="navbar">
 
       <nav class="navlist">
-        <a href="/" id="home-link" class="nav-link"><img src="images/home.png" id="home"></a>
+        <a href="/" id="home-link" class="nav-link"><img src="images/home.png" id="home" alt="home"></a>
         
         <div class="dropdown">
-          <button class="dropbtn" class="nav-link"><a class="nav-link">Class Links</a></button>
+          <button class="dropbtn nav-link">Class Links</button>
           <div class="dropdown-content">
             <a href="https://mattm401.github.io/" class="nav-link">Course Website</a>
             <a href="https://sunxinyi0501.github.io" class="nav-link">Next Student</a>
@@ -121,13 +121,14 @@
       <h4 id="footer-email">tjstumpy@udel.edu</h4>
     </div>
     <div class="footer-top">
-      <a class="nav-link "href="/">Back to home</a>
+      <a class="nav-link " href="/">Back to home</a>
     </div>
   </div>
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
-<script>
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-</script>
+
 </html>

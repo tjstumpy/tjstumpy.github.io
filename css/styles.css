@@ -64,11 +64,11 @@ html {
 /* Dropdown functionality and styling */
 .dropbtn {
     background-color: #181818;
-    color: white;
+    color: #9c9c9c;
     font-family: 'Poppins', sans-serif;
     padding: 16px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 20px;
     border: none;
     align-items: center;
