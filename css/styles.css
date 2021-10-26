@@ -29,14 +29,17 @@ html {
     position: relative;
 }a:link, a:visited{
     text-decoration: none;
-}a:hover{
-    color: white;
 }
+
 .nav-link{
     color: #9c9c9c;
     padding: 10px;
     position: relative;
     user-select: none;
+}
+.nav-link:hover{
+    color: white;
+    transition: 0.25s;
 }
 .nav-link::after{
     content: "";
@@ -97,6 +100,10 @@ display: block;
     display: block;
 }
 
+
+.highlighted-text{
+    color: white;
+}
 
 /*  */
 /* FOOTER CSS*/

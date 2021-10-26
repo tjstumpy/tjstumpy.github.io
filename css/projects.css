@@ -14,6 +14,18 @@ body{
     margin-bottom: 5vh;
 }
 
+.projects-view h3{
+    margin-bottom: 0;
+}
+
+.projects-view p{
+    color: #9c9c9c;
+}
+
+.project-date{
+    margin-top: 0;
+}
+
 .info-block{
     animation: fadeInAnimation 1.75s;
     animation-fill-mode: both;
@@ -39,6 +51,10 @@ body{
 .skills{
     display: flex;
     justify-content: space-evenly;
+}.skills p:hover{
+    transition: 0.25s;
+    color: white;
+    user-select: none;
 }
 
 @media only screen and (max-width: 700px){
